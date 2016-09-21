@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Bootstrap Example</title>
+  <link rel="stylesheet" href="public/css/styles.css">
+  <!-- JQUERY: -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- ANGULAR: -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+  <!-- FINALIZED JS FILE: -->
+  <script type="text/Javascript" src="app.js"></script>
+
+  <!-- BOOTSTRAP: -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+  <!-- FONT AWESOME: -->
+  <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" integrity="sha384-Wrgq82RsEean5tP3NK3zWAemiNEXofJsTwTyHmNb/iL3dP/sZJ4+7sOld1uqYJtE" crossorigin="anonymous">
+
+  <!-- Browser Tab Icon: -->
+  <link rel="icon" href="http://www.legendarydeeds.com/wiki/images/e/e8/Cowboy-Boot.png">
+</head>
+
+<body ng-app>
+
+  <div class="container-fluid">
+    <!-- <header class="row"> -->
+    <div class="row">
+      <div class="col-sm-3" id="title-box">
+        <h1 id="title-text">#title-box</h1>
+      </div>
+
+      <div class="col-sm-9" >
+        <div class="row">
+          <div class="col-sm-7 hidden-xs" id="trending">
+            <p class="pull-left">#trending</p>
+          </div>
+          <div class="col-sm-5 hidden-xs" id="social-links">
+            <ul class="pull-right">
+              <li><i class="fa fa-twitter fa-2x social"></i></li>
+              <li><i class="fa fa-facebook fa-2x social"></i></li>
+              <li><i class="fa fa-rss fa-2x social"></i></li>
+              <li><i class="fa fa-envelope fa-2x social"></i></li>
+            </ul>
+            <!-- <p >#social-links</p> -->
+          </div>
+        </div>
+        <div class="row" id="bottom-header-row">
+          <div class="col-sm-12 hidden-xs" id="links">
+            <ul class="pull-left links-ul">
+              <li>link1</li>
+              <li>link2</li>
+              <li>link3</li>
+              <li>link4</li>
+              <li>link5</li>
+              <li>link6</li>
+              <li><i class="fa fa-search fa-2x"></i></li>
+            </ul>
+            <!-- <p class="pull-left">#links</p> -->
+            <i class="fa fa-user fa-2x pull-right user-icon"></i>
+
+          </div>
+          <!-- DROPDOWN MENU: -->
+          <div class="col-sm-12 visible-xs ">
+            <i class="fa fa-user fa-2x pull-right user-icon"></i>
+
+            <p>
+
+
+              <button class="btn pull-left drop-menu-button" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                <i class="fa fa-bars fa-2x"></i>
+                MENU
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-block">
+              </br>
+            </br>
+          </br>
+          <div class="row">
+            <div class="col-xs-6 drop-down-link">
+              <h4>Link 1<h4>
+              </div>
+              <div class="col-xs-6 drop-down-link">
+                <h4>Link 1<h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6 drop-down-link">
+                  <h4>Link 1<h4>
+                  </div>
+                  <div class="col-xs-6 drop-down-link">
+                    <h4>Link 1<h4>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xs-6 drop-down-link">
+                      <h4>Link 1<h4>
+                      </div>
+                      <div class="col-xs-6 drop-down-link">
+                        <h4>Link 1<h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="row visible-xs-block">
+            <div class="col-12-md" id="newsletter">
+              <h4>subscribe to our newsletter</h4>
+            </div>
+          </div>
+        </header>
+
+        <!-- ARTICLES: -->
+        <div class="row">
+          <div class="col-sm-4 featured">
+            <h2 class="pull-left">featured article</h2>
+            <h4 class="pull-left lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit molestias iste et minus. </h4>
+          </br>
+          </br>
+          </br>
+          <h5 class="pull-right">Author #1</h5>
+          <div class="pull-left featured-text">
+            <h4> Featured</h4>
+          </div>
+          </div>
+
+          <div class="col-sm-8">
+            <div class="row">
+              <div class="col-sm-4 article article1">
+                <h4 class="pull-left article-headline">Article 1</h4>
+                <p class="pull-left lorem lorem-article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit molestias iste et minus. </p>
+          </br>
+          </br>
+          </br>
+          <h5 class="pull-right">Author #1</h5>
+          <div class="pull-left featured-text">
+            <h4> Article</h4>
+          </div>
+              </div>
+              <div class="col-sm-4 article article2">
+                <h4 class="pull-left article-headline">Article 2</h4>
+                <p class="pull-left lorem lorem-article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit molestias iste et minus. </p>
+          </br>
+          </br>
+          </br>
+          <h5 class="pull-right">Author #1</h5>
+          <div class="pull-left featured-text">
+            <h4> Article</h4>
+          </div>
+              </div>
+              <div class="col-sm-4 article article3">
+                <h4 class="pull-left article-headline">Article 3</h4>
+                <p class="pull-left lorem lorem-article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit molestias iste et minus. </p>
+          </br>
+          </br>
+          </br>
+          <h5 class="pull-right">Author #1</h5>
+          <div class="pull-left featured-text">
+            <h4> Article</h4>
+          </div>
+              </div>
+              <div class="col-sm-4 article article4">
+                <h4 class="pull-left article-headline">Article 4</h4>
+                <p class="pull-left lorem lorem-article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit molestias iste et minus. </p>
+          </br>
+          </br>
+          </br>
+          <h5 class="pull-right">Author #1</h5>
+          <div class="pull-left featured-text">
+            <h4> Article</h4>
+          </div>
+              </div>
+              <div class="col-sm-4 article article5">
+                <h4 class="pull-left article-headline">Article 5</h4>
+                <p class="pull-left lorem lorem-article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit molestias iste et minus. </p>
+          </br>
+          </br>
+          </br>
+          <h5 class="pull-right">Author #1</h5>
+          <div class="pull-left featured-text">
+            <h4> Article</h4>
+          </div>
+              </div>
+              <div class="col-sm-4 article article6">
+                <h4 class="pull-left article-headline">Article 6</h4>
+                <p class="pull-left lorem lorem-article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit molestias iste et minus. </p>
+          </br>
+          </br>
+          </br>
+          <h5 class="pull-right">Author #1</h5>
+          <div class="pull-left featured-text">
+            <h4> Article</h4>
+          </div>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+
+
+
+      </div>
+    </body>
+    </html>
