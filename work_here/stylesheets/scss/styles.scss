@@ -4,6 +4,7 @@ $orange: #FFA500;
 $dark-grey: #696969;
 $clear: rgba(0,0,0,0.0);
 $see-though-grey: rgba(0,0,0,0.4);
+$light-grey: rgba(0,0,0,0.2);
 
 .article{
   height: 200px;
@@ -105,6 +106,15 @@ footer ul li{
 h3{
   // color: red;
 }
+hr {
+  border: 0;
+  clear:both;
+  display:block;
+  width: 96%;
+  // background-color:#FFFF00;
+  height: 1px;
+  // padding: 10px;
+}
 .dropdown-toggle{
   background-color: $clear;
 }
@@ -136,7 +146,7 @@ li{
   text-transform: uppercase;
   cursor: pointer;
 }
-#next-page{
+#next-page li p{
   display: inline;
 }
 #title-box, header {
@@ -158,12 +168,15 @@ li{
 .user-icon:hover{
   color: black;
 }
-.scrollable-links, .white-articles, .white-article-main, .white-article-related-story{
+.white-articles{
   border: 2px solid black;
-  height: 100px;
+  // height: 100px;
+}
+.scrollable-links{
+    background-color: $light-grey;
+
 }
 #social-links{
-
 }
 .social, .user-icon{
   padding: 5px;
@@ -173,7 +186,7 @@ li{
   height: 45px;
   border: 2px solid black;
 }
-.legal-jargon, footer {
+.legal-jargon,.scrollable-links, footer, .white-article-main, .white-article-related-story {
     border: 2px solid black;
 }
 
@@ -186,6 +199,13 @@ li{
 .trending-text{
   font-style: italic;
   font-size: 1.1em;
+}
+.white-article-image{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.white-article-text, .white-article-about, .white-article-title{
+  text-align: left;
 }
 
 @media only screen and (max-width: 767px) {
