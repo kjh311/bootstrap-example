@@ -75,9 +75,10 @@ body{
   background-position: center;
   text-shadow: 2px 2px black;
   cursor: pointer;
+  opacity: 0.7;
 }
 .featured:hover, .article:hover{
-  opacity: 0.5;
+  opacity: 1;
 }
 .featured{
   height: 400px;
@@ -98,11 +99,17 @@ body{
 .fa-search{
   // margin-top: 5px;
 }
+footer ul li{
+  display: inline-block;
+}
 h3{
   // color: red;
 }
 .dropdown-toggle{
   background-color: $clear;
+}
+#legal-jargon-text{
+  padding: 20px;
 }
 li{
   display: inline;
@@ -129,6 +136,9 @@ li{
   text-transform: uppercase;
   cursor: pointer;
 }
+#next-page{
+  display: inline;
+}
 #title-box, header {
   border: 2px solid black;
   height: 90px;
@@ -148,6 +158,10 @@ li{
 .user-icon:hover{
   color: black;
 }
+.scrollable-links, .white-articles, .white-article-main, .white-article-related-story{
+  border: 2px solid black;
+  height: 100px;
+}
 #social-links{
 
 }
@@ -158,6 +172,20 @@ li{
 #small-header-box, #right-header-box, #trending, #social-links, #links, #newsletter{
   height: 45px;
   border: 2px solid black;
+}
+.legal-jargon, footer {
+    border: 2px solid black;
+}
+
+#trending{
+
+}
+.trending-feed{
+  text-transform: uppercase;
+}
+.trending-text{
+  font-style: italic;
+  font-size: 1.1em;
 }
 
 @media only screen and (max-width: 767px) {
