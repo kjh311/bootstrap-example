@@ -18,6 +18,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+  <!-- GOOGLE FONT: -->
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Muli" rel="stylesheet">
 
   <!-- FONT AWESOME: -->
   <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" >
@@ -40,7 +42,7 @@
         <div class="row">
           <div class="col-sm-7 hidden-xs" id="trending">
             <p class="pull-left trending-text">TRENDING:  </p>
-            <p class="pull-right trending-feed">Lorem ipsum dolor sit amet.</p>
+            <p class="pull-right trending-feed">Article # 3 by Author # 3</p>
           </div>
           <div class="col-sm-5 hidden-xs" id="social-links">
             <ul class="pull-right">
@@ -219,7 +221,66 @@
 <!-- BOTTOM ARTICLES: -->
 <div class="row">
   <div class="col-sm-3 scrollable-links hidden-xs">
-    <p>.scrollable-links</p>
+    <!-- <p>.scrollable-links</p> -->
+
+    <div class="row aside-links">
+      <div class="col-sm-4 ">
+          <p class="aside-link latest">Latest</p>
+      </div>
+      <div class="col-sm-4">
+          <p class="aside-link">Popular</p>
+      </div>
+      <div class="col-sm-4">
+          <p class="aside-link">Editor's Pick</p>
+      </div>
+      <div class="clearfix-sm"></div>
+<!--       <ul class="aside-links">
+        <!-- <li class="aside-link latest">Latest</li> -->
+    <!--     <li class="aside-link">Popular</li>
+        <li class="aside-link">Editor's Pick</li> -->
+      <!-- </ul> -->
+    </div>
+    <div class="row">
+        <div class="responsive-table">
+          <table class="table-hover">
+    <tbody>
+      <tr>
+        <td class="aside-image-td"><img src="img/board.jpg" class="aside-image" alt=""></td>
+        <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
+      </tr>
+<!-- <HR> -->
+      <tr>
+        <td class="aside-image-td"><img src="img/dish.jpg" class="aside-image" alt=""></td>
+        <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
+      </tr>
+
+      <tr>
+        <td class="aside-image-td"><img src="img/hands.jpeg" class="aside-image" alt=""></td>
+        <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
+      </tr>
+
+      <tr>
+        <td class="aside-image-td"><img src="img/keyboard.jpg" class="aside-image" alt=""></td>
+        <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
+      </tr>
+
+      <tr>
+        <td class="aside-image-td"><img src="img/rainbow.jpg" class="aside-image" alt=""></td>
+        <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
+      </tr>
+
+      <tr>
+        <td class="aside-image-td"><img src="img/lock.jpg" class="aside-image" alt=""></td>
+        <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
+      </tr>
+
+    </tbody>
+          </table>
+
+        </div>
+    </div>
+
+
   </div>
   <div class="col-sm-9 white-articles">
     <div class="row">
@@ -227,8 +288,8 @@
         <!-- <p>.white-article-main</p> -->
 
         <div class="white-article-1 pull-left">
-          <h1  class="white-article-title">Subarticle #1 Title</h1>
-          <h5  class="white-article-about">By Author #1 | Category</h5>
+          <h1  class="white-article-title">Sub-article #1 Title</h1>
+          <h5  class="white-article-about">By <span class="author">Author #1</span> | <span class="category">Category</span></h5>
         </br>
         <div class="row">
           <div class="col-xs-3">
@@ -244,8 +305,8 @@
 
 
         <div class="white-article-1 pull-left">
-          <h1  class="white-article-title">Subarticle #2 Title</h1>
-          <h5  class="white-article-about">By Author #2 | Category</h5>
+          <h1  class="white-article-title">Sub-article #2 Title</h1>
+          <h5  class="white-article-about">By <span class="author">Author #2</span> | <span class="category">Category</span></h5>
         </br>
         <div class="row">
           <div class="col-xs-3">
@@ -259,8 +320,8 @@
     </div>
 
     <div class="white-article-1 pull-left">
-          <h1  class="white-article-title">Subarticle #3 Title</h1>
-          <h5  class="white-article-about">By Author #3 | Category</h5>
+          <h1  class="white-article-title">Sub-article #3 Title</h1>
+          <h5  class="white-article-about">By <span class="author">Author #3</span> | <span class="category">Category</span></h5>
         </br>
         <div class="row">
           <div class="col-xs-3">
@@ -274,8 +335,8 @@
     </div>
 
     <div class="white-article-1 pull-left">
-          <h1  class="white-article-title">Subarticle #4 Title</h1>
-          <h5  class="white-article-about">By Author #4 | Category</h5>
+          <h1  class="white-article-title">Sub-article #4 Title</h1>
+          <h5  class="white-article-about">By <span class="author">Author #4</span> | <span class="category">Category</span></h5>
         </br>
         <div class="row">
           <div class="col-xs-3">
@@ -289,8 +350,8 @@
     </div>
 
     <div class="white-article-1 pull-left">
-          <h1  class="white-article-title"class="white-article-title">Subarticle #5 Title</h1>
-          <h5  class="white-article-about" class="white-article-about">By Author #5 | Category</h5>
+          <h1  class="white-article-title"class="white-article-title">Sub-article #5 Title</h1>
+          <h5  class="white-article-about" class="white-article-about">By <span class="author">Author #5</span> | <span class="category">Category</span></h5>
         </br>
         <div class="row">
           <div class="col-xs-3">
@@ -304,8 +365,8 @@
     </div>
 
     <div class="white-article-1 pull-left">
-          <h1  class="white-article-title">Subarticle #6 Title</h1>
-          <h5  class="white-article-about">By Author #6 | Category</h5>
+          <h1  class="white-article-title">Sub-article #6 Title</h1>
+          <h5  class="white-article-about">By <span class="author">Author #6</span> | <span class="category">Category</span></h5>
         </br>
         <div class="row">
           <div class="col-xs-3">
@@ -321,7 +382,7 @@
 
     <ul id="next-page">
       <li><p><i class="fa fa-angle-left"></i></p></li>
-      <li><p>1</p></li>
+      <li><p class="orange-back">1</p></li>
       <li><p>2</p></li>
       <li><p>3</p></li>
       <li><p>4</p></li>
