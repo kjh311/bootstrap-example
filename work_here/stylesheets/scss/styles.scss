@@ -5,6 +5,8 @@ $dark-grey: #696969;
 $clear: rgba(0,0,0,0.0);
 $see-though-grey: rgba(0,0,0,0.4);
 $light-grey: rgba(0,0,0,0.2);
+$very-light-grey: rgba(0,0,0, 0.02);
+$off-white: rgba(255,255,255, 0.6);
 
 .article{
   height: 200px;
@@ -100,6 +102,19 @@ body{
 .fa-search{
   // margin-top: 5px;
 }
+footer{
+  background-color: $dark-grey;
+  color: $off-white;
+}
+.footer-social-icons, .footer-links{
+  padding-right:10px;
+  padding-left:10px;
+  cursor: pointer;
+  padding-top: 10px;
+}
+.footer-social-icons:hover, .footer-links:hover{
+  color: white;
+}
 footer ul li{
   display: inline-block;
 }
@@ -111,9 +126,9 @@ hr {
   clear:both;
   display:block;
   width: 96%;
-  // background-color:#FFFF00;
+  background-color: $light-grey;
   height: 1px;
-  // padding: 10px;
+  padding: 1px;
 }
 .dropdown-toggle{
   background-color: $clear;
@@ -148,6 +163,16 @@ li{
 }
 #next-page li p{
   display: inline;
+  font-size: 2em;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+#next-page li p:hover{
+    background-color: $light-grey;
+    color: white;
+
 }
 #title-box, header {
   border: 2px solid black;
@@ -189,6 +214,10 @@ li{
 .legal-jargon,.scrollable-links, footer, .white-article-main, .white-article-related-story {
     border: 2px solid black;
 }
+.white-article-main{
+    background-color: $very-light-grey;
+
+}
 
 #trending{
 
@@ -203,9 +232,17 @@ li{
 .white-article-image{
   width: 100%;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 .white-article-text, .white-article-about, .white-article-title{
   text-align: left;
+  cursor: pointer;
+}
+.white-article-title{
+  text-transform: uppercase;
+}
+.white-article-title:hover{
+  color: $orange;
 }
 
 @media only screen and (max-width: 767px) {
