@@ -10,6 +10,13 @@ $off-white: rgba(255,255,255, 0.6);
 $red: #CD5C5C;
 $turquoise: #40E0D0;
 
+.align-right{
+  position: absolute;
+  padding-left: 30%;
+  background-color: red;
+  text-align: right !important;
+  right: 0 !important;
+}
 .article{
   height: 200px;
   background-size: 400px 300px;
@@ -226,6 +233,8 @@ li{
 }
 .read-more{
   color: $red;
+  cursor: pointer;
+  margin-top: 5px;
 }
 #title-box, header {
   border: 2px solid black;
@@ -238,7 +247,11 @@ li{
 tr{
   border-bottom: 2px solid $light-grey;
   cursor: pointer;
+  max-height: 100px;
 
+}
+td, .aside-article-text{
+  max-height: 100px;
 }
 #title-box{
   background-color: black;
@@ -256,6 +269,13 @@ tr{
 }
 .scrollable-links{
     background-color: $light-grey;
+    position: relative;
+}
+.scrollable-links-fixed{
+  position: fixed !important;
+  left: 0px;
+  top: 0px;
+  overflow: scroll;
 }
 #social-links{
 }
@@ -302,7 +322,7 @@ tr{
 }
 .white-article-text{
     padding-right: 30px;
-    padding-bottom: 20px;
+    // padding-bottom: 20px;
 }
 .white-article-title{
   text-transform: uppercase;
@@ -331,6 +351,13 @@ tr{
     }
     #next-page li p{
       font-size: 1.5em;
+      top: 30px;
+    }
+    .next-page-link{
+      margin-top: 30px;
+    }
+    .read-more{
+      padding-left: 30px;
     }
     .white-article-text{
     padding-left: 30px;
@@ -340,7 +367,7 @@ tr{
     line-height: 15px;
     font-size: .9em;
     overflow: hidden;
-    max-height: 90px;
+    max-height: 74px;
     }
     .white-article-title{
       font-size: 1.5em;
@@ -352,3 +379,13 @@ tr{
 
     }
 }
+
+@media only screen and (max-width: 400px) {
+  .white-article-text{
+    padding-left: 50px;
+  }
+  .read-more{
+    padding-left: 50px;
+  }
+}
+
