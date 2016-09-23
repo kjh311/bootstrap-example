@@ -110,6 +110,9 @@ body{
 .dropdown-menu{
   background-color: $dark-grey !important;
   width: 350%;
+  border: 2px solid black !important;
+  // border-radius: 50px;
+  margin-top: -2px !important;
 }
 .drop-down-link{
   padding: 10px;
@@ -123,6 +126,7 @@ body{
 .drop-menu-button{
   background-color: $clear;
   padding: 0px !important;
+  // margin-top: -3px;
 }
 .dropdown-item{
   display: inline-block;
@@ -223,12 +227,18 @@ li{
 .social:hover{
   color: black;
 }
+#menu-text{
+  position: absolute;
+  margin-top: 6px;
+  margin-left: 10px;
+  // padding-bottom: -31px;
+}
 .navbar-links{
   // margin-top: -20px;
   padding-top: 10px;
   padding-bottom: 3px;
-  padding-right: 13px;
-  padding-left: 13px;
+  padding-right: 10px;
+  padding-left: 10px;
   float: left;
   list-style-type: none;
   // display: inline-block;
@@ -238,6 +248,17 @@ li{
   // display: inline;
   float: left;
   list-style-type: none;
+}
+
+
+.navbar-links-link{
+  color: white !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.navbar-links-link:hover{
+    background-color: black !important;
+    color: black !important;
 }
 .navbar-links:hover{
   // color: black;
