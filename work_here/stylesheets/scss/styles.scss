@@ -241,6 +241,7 @@ body{
   position: absolute;
   background-color: $see-though-grey;
   bottom: 0px !important;
+  margin-left: 15px;
   left: 0px;
 }
 .featured-text h4{
@@ -442,11 +443,13 @@ td, .aside-article-text{
   height: 45px;
   border: 2px solid black;
 }
-.legal-jargon,.scrollable-links, footer, .white-article-main, .white-article-related-story {
+.legal-jargon,.scrollable-links, footer, .white-article-related-story {
     border: 2px solid black;
 }
 .white-article-main{
     background-color: $very-light-grey;
+    margin-left: 10px;
+    margin-right: 10px;
 
 }
 table{
@@ -536,6 +539,7 @@ ul{
 @media only screen and (max-width: 767px) {
     .article-headline{
       font-size: 2em;
+      margin-left: 10px;
     }
 
     .featured, .article{
