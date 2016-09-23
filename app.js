@@ -30,19 +30,28 @@ $(function() {
 
   // Start slide animation
   $("#myCarousel").on('slide.bs.carousel', function(event){
-    console.log('slide');
+    // console.log('slide');
 
-    // var active = $(event.target).find('.carousel-inner > .item.active');
-    // var from = active.index();
-    // var next = $(event.relatedTarget);
-    // var to = next.index();
+    var active = $(event.target).find('.carousel-inner > .item.active');
+    var from = active.index();
+    var next = $(event.relatedTarget);
+    var to = next.index();
     // var direction = event.direction;
 
-    // console.log('prev', active.prevOrLast());
-    // console.log('active', active, from);
-    // console.log('next', next, to);
-    // console.log('direction', direction);
-      alert('sdf');
+   if(to === 0){
+    $('.latest').addClass('carousel-active-slide');
+    $('.popular').removeClass('carousel-active-slide');
+    $('.editor-pick').removeClass('carousel-active-slide');
+   }else if(to === 2){
+    $('.latest').removeClass('carousel-active-slide');
+    $('.popular').addClass('carousel-active-slide');
+    $('.editor-pick').removeClass('carousel-active-slide');
+   }else if(to === 3){
+    $('.latest').removeClass('carousel-active-slide');
+    $('.popular').removeClass('carousel-active-slide');
+    $('.editor-pick').addClass('carousel-active-slide');
+   }
+      // console.log(to);
 
   });
   });

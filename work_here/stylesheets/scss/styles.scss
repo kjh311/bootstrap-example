@@ -89,6 +89,11 @@ body{
   color: white;
   text-transform: uppercase;
 }
+.carousel-active-slide{
+  color: black;
+  border-bottom: 2px solid black;
+  // padding-bottom: 1px;
+}
 .category{
   color: $orange;
 }
