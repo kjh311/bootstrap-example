@@ -117,6 +117,10 @@ body{
   margin-top: -2px !important;
   // width: 200%;
 }
+.dropdown-menu-user{
+  width: 300px;
+
+}
 
 .drop-down-link{
   padding: 10px;
@@ -249,9 +253,16 @@ body{
 }
 .fa-search{
   // margin-top: 5px;
-  // padding-bottom: -10px;
-  margin-top: -6px;
+  // padding-bottom: 0px;
+  margin-top: -9px;
   padding-left: 5px;
+}
+.fa-user{
+  margin-top: -8px;
+  // padding-bottom: 8px;
+}
+.fa-user:hover{
+  color: white !important;
 }
 footer{
   background-color: $dark-grey;
@@ -281,7 +292,7 @@ hr {
   height: 1px;
   padding: 1px;
 }
-input{
+.input{
   width: 550%;
   height: 40px;
   color: black !important;
@@ -328,7 +339,8 @@ li{
 .navbar-links{
   padding-right: 10px;
   padding-left: 10px;
-  float: left;
+  padding-bottom: 1px;
+  // float: left;
   list-style-type: none;
 }
 .navbar-link-li{
@@ -452,6 +464,16 @@ td, .aside-article-text{
     margin-right: 10px;
 
 }
+.remember-me{
+  // display: inline;
+  // position: absolute;
+  left: 60px;
+  bottom: 8px;
+}
+.submit-button{
+  width: 220px;
+  padding-bottom: 40px;
+}
 table{
   width: 100%;
   margin: 0px;
@@ -473,6 +495,21 @@ table{
 }
 ul{
   // display: inline;
+}
+.user-box{
+  margin-left: 50px;
+  margin-right: 20px;
+  // max-width: 150px;
+}
+.user-box input{
+  width: 220px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 15px;
+  color: black;
+  font-size: 1.2em;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .white-article-image{
   width: 100%;
