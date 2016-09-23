@@ -44,5 +44,25 @@ $(function() {
   });
   });
 
+// Drop Down Carousel Hover Logic:
+$(function() {
+  $('.navbar-links-link1').mouseover(function(){
+    $('.drop-down-article-slide1').removeClass('hidden');
+    $('.drop-down-article-slide2').addClass('hidden');
+    $('.drop-down-article-slide3').addClass('hidden');
+  });
+$('.navbar-links-link2').mouseover(function(){
+    $('.drop-down-article-slide1').addClass('hidden');
+    $('.drop-down-article-slide2').removeClass('hidden');
+    $('.drop-down-article-slide3').addClass('hidden');
+  });
+$('.navbar-links-link3').mouseover(function(){
+    $('.drop-down-article-slide1').addClass('hidden');
+    $('.drop-down-article-slide2').addClass('hidden');
+    $('.drop-down-article-slide3').removeClass('hidden');
+  });
+
+});
+
 
 
