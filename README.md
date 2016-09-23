@@ -1,4 +1,6 @@
-#Creating a resposive Bootstrap Template.
+#Creating a resposive Bootstrap Design.
+
+*Based upon Singularityhub.com
 
 
 

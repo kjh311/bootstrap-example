@@ -1,3 +1,5 @@
+
+// SCROLL TO FIXED POSITION:
 $(window).scroll(function() {
    if($(window).scrollTop() + $(window).height() > $(document).height() - 1290) {
        // alert("Bottom Reached!");
@@ -10,22 +12,10 @@ $(window).scroll(function() {
 
 
 
-// var $carousel = $('#myCarousel');
-// $carousel.carousel();
-
-// $carousel.bind('slide.bs.carousel', function (e) {
-//     alert('slide event!');
-// });
-
-// $('#myCarousel').bind('slide.bs.carousel', function (e) {
-//     console.log('slide event!');
-// });
-
-// $('#myCarousel').bind('slid', function (e) {
-//     console.log("slid event!");
-// });
 
 
+
+// GREY CAROUSEL LOGIC:
 $(function() {
 
   // Start slide animation
@@ -51,7 +41,8 @@ $(function() {
     $('.popular').removeClass('carousel-active-slide');
     $('.editor-pick').addClass('carousel-active-slide');
    }
-      // console.log(to);
+  });
+  });
 
-  });
-  });
+
+
