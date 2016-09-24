@@ -113,7 +113,8 @@ body{
   border-top: 2px solid $very-dark-grey;
 }
 .dropdown-menu{
-  background-color: $dark-grey !important;
+    background: -webkit-linear-gradient($dark-grey, black);
+
   // position: relative;
   width: 500%;
   border: 2px solid black !important;
@@ -286,8 +287,14 @@ body{
   color: white !important;
 }
 footer{
-  background-color: $dark-grey;
+  background: -webkit-linear-gradient($dark-grey, black);
   color: $off-white;
+}
+.footer-links-ul{
+  margin-left: -40px !important;
+}
+.footer-social-ul{
+  margin-left: -40px !important;
 }
 .footer-social-icons, .footer-links{
   padding-right:10px;
@@ -376,7 +383,7 @@ li{
   color: white !important;
   padding: 12px;
   padding-right: 50px;
-  text-decoration: none;
+  text-decoration: none !important;
   display: inline-block;
   margin-left: -12px;
   border-right: 2px solid black;
@@ -400,6 +407,9 @@ li{
 }
 .newsletter-text{
   margin-top: 11px;
+}
+#next-page{
+  margin-left: -60px !important;
 }
 #next-page li p{
   display: inline;
