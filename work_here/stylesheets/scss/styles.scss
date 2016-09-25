@@ -55,10 +55,19 @@ $turquoise: #40E0D0;
 }
 .aside-links{
   // border-bottom: 2px solid $light-grey;
-  overflow: scroll;
+  // overflow: scroll;
   position: relative;
-  // height: 220%;
+
+
   padding-top: 10px;
+    overflow: scroll;
+}
+.aside-articles-wrap{
+  // width:1000px;
+    overflow:scroll;
+    // position:relative;
+    // height:600px;
+
 }
 .aside-link{
     padding-right: 15px;
@@ -514,6 +523,7 @@ td, .aside-article-text{
 .scrollable-links{
     background-color: $light-grey;
     position: relative;
+
 }
 .scrollable-links-fixed{
   position: fixed !important;
