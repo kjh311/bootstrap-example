@@ -137,6 +137,7 @@ body{
   padding: 10px;
   color: $off-white;
   // text-transform: uppercase;
+  // opacity($color)
   cursor: pointer;
 }
 .drop-down-link:hover{
@@ -447,6 +448,12 @@ li{
   background-color: $orange;
   color: white;
 }
+#trending{
+  border-right: 2px solid $light-grey !important;
+}
+#social-links{
+  border-left: 2px solid $light-grey !important;
+}
 tr{
   border-bottom: 2px solid $light-grey;
   cursor: pointer;
@@ -456,9 +463,27 @@ tr{
 td, .aside-article-text{
   max-height: 100px;
 }
+.title-pic{
+  // height: 150%;
+  // width: 160px;
+  // height: 80px;
+  // vertical-align: middle;
+  // position: relative;
+  // position:absolute;
+  // margin-top:20px;
+  // margin-top:-40;
+  // left: 20%;
+}
 #title-box{
   background-color: black;
   color: $light-blue-color;
+  position: relative;
+  text-align: center;
+
+}
+.title-text{
+  font-family: 'Orbitron', sans-serif;
+  margin-top: 25px;
 }
 .user-icon{
   // font-size: 3em;
@@ -631,6 +656,7 @@ ul{
     .featured, .article{
       height: 200px;
       background-size: 100%;
+      opacity:0.8;
     }
     .white-article-image, .white-article-title{
       // margin: 0px;
