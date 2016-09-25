@@ -55,7 +55,9 @@ $turquoise: #40E0D0;
 }
 .aside-links{
   // border-bottom: 2px solid $light-grey;
-
+  overflow: scroll;
+  position: relative;
+  // height: 220%;
   padding-top: 10px;
 }
 .aside-link{

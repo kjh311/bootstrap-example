@@ -1,15 +1,30 @@
 
-// SCROLL TO FIXED POSITION:
-$(window).scroll(function() {
-   if($(window).scrollTop() + $(window).height() > $(document).height() - 1290) {
-       // alert("Bottom Reached!");
-       // $('.scrollable-links').addClass('scrollable-links-fixed');
-       // $('.white-article-main').addClass('align-right pull-right offset-md-4');
-   }else{
-    // $('.scrollable-links').removeClass('scrollable-links-fixed');
-   }
-});
+$( document ).ready(function() {
 
+
+
+// SCROLL TO FIXED POSITION:
+  $(window).scroll(function(){
+    if ($(window).scrollTop() > $('.scrollable-links').position().top) {
+      // alert('#element hits top!');
+      $('.scrollable-links').addClass('scrollable-links-fixed');
+      $('.white-articles').addClass('col-md-offset-3');
+    }
+//
+  });
+
+  $(window).scroll(function(){
+    if ($(window).scrollTop() ===  $('.scrollable-links').position().top) {
+      // alert('#element hits top!');
+      $('.scrollable-links').removeClass('scrollable-links-fixed');
+      $('.white-articles').removeClass('col-md-offset-3');
+    }
+  });
+
+
+
+
+});
 
 
 
@@ -43,6 +58,7 @@ $(function() {
    }
   });
   });
+
 
 // Drop Down Carousel Hover Logic:
 $(function() {
