@@ -310,8 +310,15 @@
                           <input type="text" autofocus placeholder="User Name">
                           <input type="text" placeholder="Password">
 
-                        <input class="remember-me-checkbox" type="checkbox">
-                        <p class="remember-me">Remember Me</p>
+                        <div class="row checkbox-row">
+                          <div class="col-xs-2">
+                          <input class="remember-me-checkbox" type="checkbox" checked="checked">
+                          </div>
+                          <div class="col-xs-10">
+                          <p class="remember-me">Remember Me</p>
+                          </div>
+
+                        </div>
                         <button class="btn btn-primary submit-button">SUBMIT</button>
 
                         </div>
@@ -334,8 +341,17 @@
                           <input type="text" autofocus placeholder="User Name">
                           <input type="text" placeholder="Password">
 
-                        <input class="remember-me-checkbox" type="checkbox">
-                        <p class="remember-me">Remember Me</p>
+
+                        <div class="row checkbox-row">
+                          <div class="col-xs-2">
+                          <input class="remember-me-checkbox" type="checkbox" checked="checked">
+                          </div>
+                          <div class="col-xs-10">
+                          <p class="remember-me">Remember Me</p>
+                          </div>
+
+                        </div>
+                        <!-- <button class="btn btn-primary submit-button">SUBMIT</button> -->
                         <button class="btn btn-primary submit-button">SUBMIT</button>
 
                         <!-- </div> -->
@@ -693,7 +709,9 @@
 
 <!-- WHITE ARTICLES: -->
   <div class="col-md-9 white-articles">
-    <div class="row">
+
+    <!-- White Article Page 1: -->
+    <div class="row white-article-wrapper white-article-wrapper1">
       <div class="col-sm-12 white-article-main">
         <!-- <p>.white-article-main</p> -->
 
@@ -795,7 +813,221 @@
  </div>
 </div>
 
+<!-- White Article Page 2 -->
+  <!-- <div class="col-md-9 white-articles"> -->
+    <div class="row white-article-wrapper white-article-wrapper2 hidden">
+      <div class="col-sm-12 white-article-main">
+        <!-- <p>.white-article-main</p> -->
 
+        <div class="white-article-1 pull-left">
+          <h1  class="white-article-title">Sub-article #1 Title</h1>
+          <h5  class="white-article-about">By <span class="author">Author #1</span> | <span class="category">Category</span></h5>
+        </br>
+        <div class="row">
+          <div class="col-xs-3">
+            <img  src="img/globe.jpg" class="white-article-image" alt="">
+          </div>
+          <div class="col-xs-9">
+            <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
+            <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
+          </div>
+          <HR>
+
+          </div>
+        </div>
+
+
+        <div class="white-article-1 pull-left">
+          <h1  class="white-article-title">Sub-article #2 Title</h1>
+          <h5  class="white-article-about">By <span class="author">Author #2</span> | <span class="category">Category</span></h5>
+        </br>
+        <div class="row">
+          <div class="col-xs-3">
+            <img  src="img/dish.jpg" class="white-article-image" alt="">
+          </div>
+          <div class="col-xs-9">
+           <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
+           <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
+         </div>
+         <HR>
+         </div>
+       </div>
+
+       <div class="white-article-1 pull-left">
+        <h1  class="white-article-title">Sub-article #3 Title</h1>
+        <h5  class="white-article-about">By <span class="author">Author #3</span> | <span class="category">Category</span></h5>
+      </br>
+      <div class="row">
+        <div class="col-xs-3">
+          <img  src="img/lock.jpg" class="white-article-image" alt="">
+        </div>
+        <div class="col-xs-9">
+         <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
+         <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
+       </div>
+       <HR>
+       </div>
+     </div>
+
+     <div class="white-article-1 pull-left">
+      <h1  class="white-article-title">Sub-article #4 Title</h1>
+      <h5  class="white-article-about">By <span class="author">Author #4</span> | <span class="category">Category</span></h5>
+    </br>
+    <div class="row">
+      <div class="col-xs-3">
+        <img  src="img/map.jpg" class="white-article-image" alt="">
+      </div>
+      <div class="col-xs-9">
+       <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
+       <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
+     </div>
+     <HR>
+     </div>
+   </div>
+
+   <div class="white-article-1 pull-left">
+    <h1  class="white-article-title"class="white-article-title">Sub-article #5 Title</h1>
+    <h5  class="white-article-about" class="white-article-about">By <span class="author">Author #5</span> | <span class="category">Category</span></h5>
+  </br>
+  <div class="row">
+    <div class="col-xs-3">
+      <img  src="img/robot.jpg" class="white-article-image" alt="">
+    </div>
+    <div class="col-xs-9">
+     <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
+     <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
+   </div>
+   <HR>
+   </div>
+ </div>
+
+ <div class="white-article-1 pull-left">
+  <h1  class="white-article-title">Sub-article #6 Title</h1>
+  <h5  class="white-article-about">By <span class="author">Author #6</span> | <span class="category">Category</span></h5>
+</br>
+<div class="row">
+  <div class="col-xs-3">
+    <img  src="img/bulb.jpg" class="white-article-image" alt="">
+  </div>
+  <div class="col-xs-9">
+   <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
+   <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
+ </div>
+ <HR>
+ </div>
+</div>
+</div>
+</div>
+
+
+<!-- White Article Page 3 -->
+<div class="row white-article-wrapper white-article-wrapper3 hidden">
+      <div class="col-sm-12 white-article-main">
+        <!-- <p>.white-article-main</p> -->
+
+        <div class="white-article-1 pull-left">
+          <h1  class="white-article-title">Sub-article #1 Title</h1>
+          <h5  class="white-article-about">By <span class="author">Author #1</span> | <span class="category">Category</span></h5>
+        </br>
+        <div class="row">
+          <div class="col-xs-3">
+            <img  src="img/mrDNA.jpeg" class="white-article-image" alt="">
+          </div>
+          <div class="col-xs-9">
+            <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
+            <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
+          </div>
+          <HR>
+
+          </div>
+        </div>
+
+
+        <div class="white-article-1 pull-left">
+          <h1  class="white-article-title">Sub-article #2 Title</h1>
+          <h5  class="white-article-about">By <span class="author">Author #2</span> | <span class="category">Category</span></h5>
+        </br>
+        <div class="row">
+          <div class="col-xs-3">
+            <img  src="img/satelite.jpeg" class="white-article-image" alt="">
+          </div>
+          <div class="col-xs-9">
+           <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
+           <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
+         </div>
+         <HR>
+         </div>
+       </div>
+
+       <div class="white-article-1 pull-left">
+        <h1  class="white-article-title">Sub-article #3 Title</h1>
+        <h5  class="white-article-about">By <span class="author">Author #3</span> | <span class="category">Category</span></h5>
+      </br>
+      <div class="row">
+        <div class="col-xs-3">
+          <img  src="img/rainbow.jpg" class="white-article-image" alt="">
+        </div>
+        <div class="col-xs-9">
+         <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
+         <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
+       </div>
+       <HR>
+       </div>
+     </div>
+
+     <div class="white-article-1 pull-left">
+      <h1  class="white-article-title">Sub-article #4 Title</h1>
+      <h5  class="white-article-about">By <span class="author">Author #4</span> | <span class="category">Category</span></h5>
+    </br>
+    <div class="row">
+      <div class="col-xs-3">
+        <img  src="img/sound.jpeg" class="white-article-image" alt="">
+      </div>
+      <div class="col-xs-9">
+       <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
+       <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
+     </div>
+     <HR>
+     </div>
+   </div>
+
+   <div class="white-article-1 pull-left">
+    <h1  class="white-article-title"class="white-article-title">Sub-article #5 Title</h1>
+    <h5  class="white-article-about" class="white-article-about">By <span class="author">Author #5</span> | <span class="category">Category</span></h5>
+  </br>
+  <div class="row">
+    <div class="col-xs-3">
+      <img  src="img/touch.jpeg" class="white-article-image" alt="">
+    </div>
+    <div class="col-xs-9">
+     <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
+     <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
+   </div>
+   <HR>
+   </div>
+ </div>
+
+ <div class="white-article-1 pull-left">
+  <h1  class="white-article-title">Sub-article #6 Title</h1>
+  <h5  class="white-article-about">By <span class="author">Author #6</span> | <span class="category">Category</span></h5>
+</br>
+<div class="row">
+  <div class="col-xs-3">
+    <img  src="img/robot.jpg" class="white-article-image" alt="">
+  </div>
+  <div class="col-xs-9">
+   <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
+   <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
+ </div>
+ <HR>
+ </div>
+</div>
+</div>
+</div>
+
+
+
+<!-- NEXT PAGE LINKS: -->
 <ul id="next-page">
   <li><p><i class="fa fa-angle-left next-page-link"></i></p></li>
   <li><p class="orange-back">1</p></li>

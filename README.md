@@ -1,5 +1,10 @@
 #Creating a resposive Bootstrap Design.
 
+*Small amount of Jquery for hover drop down menues,
+position of elements on scroll,
+and for carousel logic.
+
+
 *Based upon Singularityhub.com
 
 
