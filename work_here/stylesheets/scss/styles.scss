@@ -443,7 +443,8 @@ li{
   background-color: $orange;
 }
 .orange-back:hover{
-  // background-color: $orange;
+  background-color: $orange !important;
+  color: black !important;
 }
 .redback{
   background-color: red;
@@ -693,6 +694,7 @@ ul{
     }
     .next-page-link{
       margin-top: 30px;
+      // padding: 15px;
     }
     .read-more{
       padding-left: 30px;
