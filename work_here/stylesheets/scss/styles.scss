@@ -434,10 +434,9 @@ li{
   cursor: pointer;
   border-radius: 10px;
 }
-#next-page li p:hover{
+.next-page-link:hover{
     background-color: $light-grey;
     color: white;
-
 }
 .orange-back{
   background-color: $orange;
@@ -635,6 +634,9 @@ ul{
 .your-logo{
   max-height: 100%;
   text-align: center;
+}
+.z{
+  opacity: 0;
 }
 
 

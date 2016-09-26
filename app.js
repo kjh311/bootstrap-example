@@ -77,14 +77,18 @@ $('.navbar-links-link3').mouseover(function(){
 });
 
 
+
+
 // White Articles Carousel Logic:
 $(function() {
       function firstPage(){
         $('.next-page-link1').addClass('orange-back');
         $('.next-page-link3').removeClass('orange-back');
         $('.next-page-link2').removeClass('orange-back');
-        $('.fa-angle-double-right').removeClass('hidden');
-        $('.fa-angle-double-left').addClass('hidden');
+        $('.angle-double-right').removeClass('z');
+        $('.angle-double-left').addClass('z');
+        $('.angle-right').removeClass('z');
+        $('.angle-left').addClass('z');
         $('.white-article-wrapper2').fadeOut(300);
         $('.white-article-wrapper3').fadeOut(300);
         $('.white-article-wrapper1').addClass('active');
@@ -100,8 +104,10 @@ $(function() {
           $('.next-page-link1').removeClass('orange-back');
           $('.next-page-link3').removeClass('orange-back');
           $('.next-page-link2').addClass('orange-back');
-          $('.fa-angle-double-right').removeClass('hidden');
-          $('.fa-angle-double-left').removeClass('hidden');
+          $('.angle-double-right').removeClass('z');
+          $('.angle-double-left').removeClass('z');
+          $('.angle-right').removeClass('z');
+          $('.angle-left').removeClass('z');
           $('.white-article-wrapper1').fadeOut(300);
           $('.white-article-wrapper3').fadeOut(300);
           $('.white-article-wrapper1').removeClass('active');
@@ -117,8 +123,10 @@ $(function() {
         $('.next-page-link1').removeClass('orange-back');
         $('.next-page-link2').removeClass('orange-back');
         $('.next-page-link3').addClass('orange-back');
-        $('.fa-angle-double-right').addClass('hidden');
-        $('.fa-angle-double-left').removeClass('hidden');
+        $('.angle-double-right').addClass('z');
+        $('.angle-double-left').removeClass('z');
+        $('.angle-right').addClass('z');
+        $('.angle-left').removeClass('z');
         $('.white-article-wrapper1').fadeOut(300);
         $('.white-article-wrapper2').fadeOut(300);
         $('.white-article-wrapper1').removeClass('active');
