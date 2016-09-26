@@ -76,5 +76,36 @@ $('.navbar-links-link3').mouseover(function(){
 
 });
 
+
+// White Articles Carousel Logic:
+$(function() {
+ $('.next-page-link1').click(function(){
+    $('.white-article-wrapper2').fadeOut(300);
+    $('.white-article-wrapper3').fadeOut(300);
+    function fade(){
+     $('.white-article-wrapper1').fadeIn(300);
+    }
+    setTimeout(fade, 300);
+  });
+$('.next-page-link2').click(function(){
+  $('.white-article-wrapper1').fadeOut(300);
+  $('.white-article-wrapper3').fadeOut(300);
+    function fade(){
+     $('.white-article-wrapper2').fadeIn(300).removeClass('hidden');
+    }
+    setTimeout(fade, 300);
+  });
+$('.next-page-link3').click(function(){
+  $('.white-article-wrapper1').fadeOut(300);
+  $('.white-article-wrapper2').fadeOut(300);
+    function fade(){
+     $('.white-article-wrapper3').fadeIn(300).removeClass('hidden');
+    }
+    setTimeout(fade, 300);
+  });
+
+});
+
+
 });
 
