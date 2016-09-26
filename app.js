@@ -80,6 +80,9 @@ $('.navbar-links-link3').mouseover(function(){
 // White Articles Carousel Logic:
 $(function() {
  $('.next-page-link1').click(function(){
+  $('.next-page-link1').addClass('orange-back');
+  $('.next-page-link3').removeClass('orange-back');
+  $('.next-page-link2').removeClass('orange-back');
     $('.white-article-wrapper2').fadeOut(300);
     $('.white-article-wrapper3').fadeOut(300);
     function fade(){
@@ -88,14 +91,23 @@ $(function() {
     setTimeout(fade, 300);
   });
 $('.next-page-link2').click(function(){
+  $('.next-page-link1').removeClass('orange-back');
+  $('.next-page-link3').removeClass('orange-back');
+  $('.next-page-link2').addClass('orange-back');
   $('.white-article-wrapper1').fadeOut(300);
   $('.white-article-wrapper3').fadeOut(300);
+
     function fade(){
      $('.white-article-wrapper2').fadeIn(300).removeClass('hidden');
     }
     setTimeout(fade, 300);
   });
+
+
 $('.next-page-link3').click(function(){
+    $('.next-page-link1').removeClass('orange-back');
+    $('.next-page-link2').removeClass('orange-back');
+    $('.next-page-link3').addClass('orange-back');
   $('.white-article-wrapper1').fadeOut(300);
   $('.white-article-wrapper2').fadeOut(300);
     function fade(){
