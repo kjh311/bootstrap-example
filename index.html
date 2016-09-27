@@ -70,8 +70,6 @@
                             <li><a class="navbar-links-link navbar-links-link3" href="#">LINK 3</a></li>
                           </div>
 
-
-
                           <div class="drop-down-article-slide drop-down-article-slide1">
                             <div class="col-xs-3 drop-down-article-div">
                               <img class="drop-down-article-image" src="img/chip.jpg" alt="">
@@ -131,8 +129,6 @@
                     </div>
                   </li>
 
-
-
                   <li class="navbar-link-li pull-left">
                     <div class="dropdown navbar-links">
                       <p class="dropdown-toggle disabled" type="button" data-toggle="dropdown">Category 2
@@ -143,8 +139,6 @@
                               <li><a class="navbar-links-link navbar-links-link2" href="#">LINK 2</a></li>
                               <li><a class="navbar-links-link navbar-links-link3" href="#">LINK 3</a></li>
                             </div>
-
-
 
                             <div class="drop-down-article-slide drop-down-article-slide1">
                               <div class="col-xs-3 drop-down-article-div">
@@ -214,8 +208,6 @@
                                 <li><a class="navbar-links-link navbar-links-link2" href="#">LINK 2</a></li>
                                 <li><a class="navbar-links-link navbar-links-link3" href="#">LINK 3</a></li>
                               </div>
-
-
 
                               <div class="drop-down-article-slide drop-down-article-slide1">
                                 <div class="col-xs-3 drop-down-article-div">
@@ -291,7 +283,6 @@
                         </li>
                       </ul>
 
-
                       <div class="dropdown navbar-links pull-right">
                         <p class="dropdown-toggle disabled" type="button" data-toggle="dropdown">   <i class="fa fa-user fa-2x pull-right user-icon user-icon1"></i>
                           <ul class="dropdown-menu dropdown-menu-user dropdown-menu-user1">
@@ -320,25 +311,22 @@
 
                       <!-- DROPDOWN MENU: -->
                       <div class="col-sm-12 visible-xs ">
-
                         <div class="dropdown pull-right">
-                          <p class="dropdown-toggle disabled" type="button" data-toggle="dropdown">        <i class="fa fa-user fa-2x pull-right user-icon user-icon2"></i>
-
+                          <p class="dropdown-toggle disabled" type="button" data-toggle="dropdown">    <i class="fa fa-user fa-2x pull-right user-icon user-icon2"></i>
                             <ul class="dropdown-menu dropdown-menu-user dropdown-menu-user2">
                               <div class="row">
                                 <div class=" user-box">
                                   <input type="text" autofocus placeholder="User Name">
                                   <input type="text" placeholder="Password">
 
-
                                   <div class="row checkbox-row">
                                     <div class="col-xs-2">
                                       <input class="remember-me-checkbox" type="checkbox" checked="checked">
                                     </div>
+
                                     <div class="col-xs-10">
                                       <p class="remember-me">Remember Me</p>
                                     </div>
-
                                   </div>
                                   <button class="btn btn-primary submit-button">SUBMIT</button>
                                 </div>
@@ -390,8 +378,6 @@
                             </div>
                           </div>
                         </div>
-
-
 
                         <div class="row visible-xs-block">
                           <div class="col-12-md" id="newsletter">
@@ -683,333 +669,88 @@
   <!-- WHITE ARTICLES: -->
   <div class="col-md-9 white-articles">
 
+
     <!-- White Article Page 1: -->
     <div class="row white-article-wrapper white-article-wrapper1 active">
       <div class="col-sm-12 white-article-main">
-        <div class="white-article-1 pull-left">
-          <h1  class="white-article-title">Sub-article #1 Title</h1>
-          <h5  class="white-article-about">By <span class="author">Author #1</span> | <span class="category">Category</span></h5>
+
+        <div ng-repeat="x in articles| startFrom:0 | limitTo:6">
+         <div class="white-article-1 pull-left">
+
+          <h1  class="white-article-title">{{ x.title }}</h1>
+          <h5  class="white-article-about">By <span class="author">{{ x.author }}</span> | <span class="category">Category</span></h5>
         </br>
         <div class="row">
           <div class="col-xs-3">
-            <img  src="img/blue.jpg" class="white-article-image" alt="">
+            <img  src="{{x.image}}" class="white-article-image" alt="">
           </div>
           <div class="col-xs-9">
-            <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
+            <p class="white-article-text">{{x.text}}</p>
             <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
           </div>
           <div class="clearfix visible-xs"></div>
           <HR>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
 
 
-        <div class="white-article-1 pull-left">
-          <h1  class="white-article-title">Sub-article #2 Title</h1>
-          <h5  class="white-article-about">By <span class="author">Author #2</span> | <span class="category">Category</span></h5>
+
+<!-- White Article Page 2: -->
+    <div class="row white-article-wrapper white-article-wrapper2 hidden">
+      <div class="col-sm-12 white-article-main">
+
+        <div ng-repeat="x in articles| startFrom:6 | limitTo:6">
+         <div class="white-article-1 pull-left">
+
+          <h1  class="white-article-title">{{ x.title }}</h1>
+          <h5  class="white-article-about">By <span class="author">{{ x.author }}</span> | <span class="category">Category</span></h5>
         </br>
+
         <div class="row">
           <div class="col-xs-3">
-            <img  src="img/brain.jpg" class="white-article-image" alt="">
+            <img  src="{{x.image}}" class="white-article-image" alt="">
           </div>
           <div class="col-xs-9">
-           <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
-           <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-         </div>
-         <div class="clearfix visible-xs"></div>
-         <HR>
-         </div>
-       </div>
-
-       <div class="white-article-1 pull-left">
-        <h1  class="white-article-title">Sub-article #3 Title</h1>
-        <h5  class="white-article-about">By <span class="author">Author #3</span> | <span class="category">Category</span></h5>
-      </br>
-      <div class="row">
-        <div class="col-xs-3">
-          <img  src="img/eye.jpg" class="white-article-image" alt="">
+            <p class="white-article-text">{{x.text}}</p>
+            <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
+          </div>
+          <div class="clearfix visible-xs"></div>
+          <HR>
+          </div>
         </div>
-        <div class="col-xs-9">
-         <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
-         <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-       </div>
-       <div class="clearfix visible-xs"></div>
-       <HR>
-       </div>
-     </div>
-
-     <div class="white-article-1 pull-left">
-      <h1  class="white-article-title">Sub-article #4 Title</h1>
-      <h5  class="white-article-about">By <span class="author">Author #4</span> | <span class="category">Category</span></h5>
-    </br>
-    <div class="row">
-      <div class="col-xs-3">
-        <img  src="img/globe.jpg" class="white-article-image" alt="">
-      </div>
-      <div class="col-xs-9">
-       <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
-       <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-     </div>
-     <div class="clearfix visible-xs"></div>
-     <HR>
-     </div>
-   </div>
-
-   <div class="white-article-1 pull-left">
-    <h1  class="white-article-title"class="white-article-title">Sub-article #5 Title</h1>
-    <h5  class="white-article-about" class="white-article-about">By <span class="author">Author #5</span> | <span class="category">Category</span></h5>
-  </br>
-  <div class="row">
-    <div class="col-xs-3">
-      <img  src="img/steve-jobs.jpeg" class="white-article-image" alt="">
-    </div>
-    <div class="col-xs-9">
-     <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
-     <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-   </div>
-   <div class="clearfix visible-xs"></div>
-   <HR>
-   </div>
- </div>
-
- <div class="white-article-1 pull-left">
-  <h1  class="white-article-title">Sub-article #6 Title</h1>
-  <h5  class="white-article-about">By <span class="author">Author #6</span> | <span class="category">Category</span></h5>
-</br>
-<div class="row">
-  <div class="col-xs-3">
-    <img  src="img/bulb.jpg" class="white-article-image" alt="">
-  </div>
-  <div class="col-xs-9">
-   <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
-   <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
- </div>
- <div class="clearfix visible-xs"></div>
- <HR>
- </div>
-</div>
-</div>
-</div>
-
-
-<!-- White Article Page 2 -->
-<div class="row white-article-wrapper white-article-wrapper2 hidden">
-  <div class="col-sm-12 white-article-main">
-    <div class="white-article-1 pull-left">
-      <h1  class="white-article-title">Sub-article #8 Title</h1>
-      <h5  class="white-article-about">By <span class="author">Author #1</span> | <span class="category">Category</span></h5>
-    </br>
-    <div class="row">
-      <div class="col-xs-3">
-        <img  src="img/globe.jpg" class="white-article-image" alt="">
-      </div>
-      <div class="col-xs-9">
-        <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
-        <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-      </div>
-      <div class="clearfix visible-xs"></div>
-      <HR>
       </div>
     </div>
-
-
-    <div class="white-article-1 pull-left">
-      <h1  class="white-article-title">Sub-article #8 Title</h1>
-      <h5  class="white-article-about">By <span class="author">Author #2</span> | <span class="category">Category</span></h5>
-    </br>
-    <div class="row">
-      <div class="col-xs-3">
-        <img  src="img/dish.jpg" class="white-article-image" alt="">
-      </div>
-      <div class="col-xs-9">
-       <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
-       <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-     </div>
-     <div class="clearfix visible-xs"></div>
-     <HR>
-     </div>
-   </div>
-
-   <div class="white-article-1 pull-left">
-    <h1  class="white-article-title">Sub-article #9 Title</h1>
-    <h5  class="white-article-about">By <span class="author">Author #3</span> | <span class="category">Category</span></h5>
-  </br>
-  <div class="row">
-    <div class="col-xs-3">
-      <img  src="img/lock.jpg" class="white-article-image" alt="">
-    </div>
-    <div class="col-xs-9">
-     <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
-     <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-   </div>
-   <div class="clearfix visible-xs"></div>
-   <HR>
-   </div>
- </div>
-
- <div class="white-article-1 pull-left">
-  <h1  class="white-article-title">Sub-article #10 Title</h1>
-  <h5  class="white-article-about">By <span class="author">Author #4</span> | <span class="category">Category</span></h5>
-</br>
-<div class="row">
-  <div class="col-xs-3">
-    <img  src="img/map.jpg" class="white-article-image" alt="">
   </div>
-  <div class="col-xs-9">
-   <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
-   <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
- </div>
- <div class="clearfix visible-xs"></div>
- <HR>
- </div>
-</div>
 
-<div class="white-article-1 pull-left">
-  <h1  class="white-article-title"class="white-article-title">Sub-article #11 Title</h1>
-  <h5  class="white-article-about" class="white-article-about">By <span class="author">Author #5</span> | <span class="category">Category</span></h5>
-</br>
-<div class="row">
-  <div class="col-xs-3">
-    <img  src="img/robot.jpg" class="white-article-image" alt="">
-  </div>
-  <div class="col-xs-9">
-   <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
-   <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
- </div>
- <div class="clearfix visible-xs"></div>
- <HR>
- </div>
-</div>
+<!-- White Article Page 3: -->
+    <div class="row white-article-wrapper white-article-wrapper3 hidden">
+      <div class="col-sm-12 white-article-main">
 
-<div class="white-article-1 pull-left">
-  <h1  class="white-article-title">Sub-article #12 Title</h1>
-  <h5  class="white-article-about">By <span class="author">Author #6</span> | <span class="category">Category</span></h5>
-</br>
-<div class="row">
-  <div class="col-xs-3">
-    <img  src="img/chip.jpg" class="white-article-image" alt="">
-  </div>
-  <div class="col-xs-9">
-   <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
-   <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
- </div>
- <div class="clearfix visible-xs"></div>
- <HR>
- </div>
-</div>
-</div>
-</div>
+        <div ng-repeat="x in articles| startFrom:12 | limitTo:6">
+         <div class="white-article-1 pull-left">
 
+          <h1  class="white-article-title">{{ x.title }}</h1>
+          <h5  class="white-article-about">By <span class="author">{{ x.author }}</span> | <span class="category">Category</span></h5>
+        </br>
 
-<!-- White Article Page 3 -->
-<div class="row white-article-wrapper white-article-wrapper3 hidden">
-  <div class="col-sm-12 white-article-main">
-    <div class="white-article-1 pull-left">
-      <h1  class="white-article-title">Sub-article #13 Title</h1>
-      <h5  class="white-article-about">By <span class="author">Author #1</span> | <span class="category">Category</span></h5>
-    </br>
-    <div class="row">
-      <div class="col-xs-3">
-        <img  src="img/mrDNA.jpeg" class="white-article-image" alt="">
-      </div>
-      <div class="col-xs-9">
-        <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
-        <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-      </div>
-      <div class="clearfix visible-xs"></div>
-      <HR>
+        <div class="row">
+          <div class="col-xs-3">
+            <img  src="{{x.image}}" class="white-article-image" alt="">
+          </div>
+          <div class="col-xs-9">
+            <p class="white-article-text">{{x.text}}</p>
+            <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
+          </div>
+          <div class="clearfix visible-xs"></div>
+          <HR>
+          </div>
+        </div>
       </div>
     </div>
-
-
-    <div class="white-article-1 pull-left">
-      <h1  class="white-article-title">Sub-article #14 Title</h1>
-      <h5  class="white-article-about">By <span class="author">Author #2</span> | <span class="category">Category</span></h5>
-    </br>
-    <div class="row">
-      <div class="col-xs-3">
-        <img  src="img/satelite.jpeg" class="white-article-image" alt="">
-      </div>
-      <div class="col-xs-9">
-       <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
-       <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-     </div>
-     <div class="clearfix visible-xs"></div>
-     <HR>
-     </div>
-   </div>
-
-   <div class="white-article-1 pull-left">
-    <h1  class="white-article-title">Sub-article #15 Title</h1>
-    <h5  class="white-article-about">By <span class="author">Author #3</span> | <span class="category">Category</span></h5>
-  </br>
-  <div class="row">
-    <div class="col-xs-3">
-      <img  src="img/rainbow.jpg" class="white-article-image" alt="">
-    </div>
-    <div class="col-xs-9">
-     <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
-     <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-   </div>
-   <div class="clearfix visible-xs"></div>
-   <HR>
-   </div>
- </div>
-
- <div class="white-article-1 pull-left">
-  <h1  class="white-article-title">Sub-article #16 Title</h1>
-  <h5  class="white-article-about">By <span class="author">Author #4</span> | <span class="category">Category</span></h5>
-</br>
-<div class="row">
-  <div class="col-xs-3">
-    <img  src="img/sound.jpeg" class="white-article-image" alt="">
   </div>
-  <div class="col-xs-9">
-   <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
-   <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
- </div>
- <div class="clearfix visible-xs"></div>
- <HR>
- </div>
-</div>
-
-<div class="white-article-1 pull-left">
-  <h1  class="white-article-title"class="white-article-title">Sub-article #17 Title</h1>
-  <h5  class="white-article-about" class="white-article-about">By <span class="author">Author #5</span> | <span class="category">Category</span></h5>
-</br>
-<div class="row">
-  <div class="col-xs-3">
-    <img  src="img/touch.jpeg" class="white-article-image" alt="">
-  </div>
-  <div class="col-xs-9">
-   <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
-   <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
- </div>
- <div class="clearfix visible-xs"></div>
- <HR>
- </div>
-</div>
-
-<div class="white-article-1 pull-left">
-  <h1  class="white-article-title">Sub-article #18 Title</h1>
-  <h5  class="white-article-about">By <span class="author">Author #6</span> | <span class="category">Category</span></h5>
-</br>
-<div class="row">
-  <div class="col-xs-3">
-    <img  src="img/robot.jpg" class="white-article-image" alt="">
-  </div>
-  <div class="col-xs-9">
-   <p class="white-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad deserunt amet totam officia similique perferendis, eius minus, eligendi, sint odio animi. Sequi, odit, cum. Tenetur quisquam, est? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia culpa deleniti recusandae exercitationem sortum bastium.</p>
-   <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
- </div>
- <div class="clearfix visible-xs"></div>
- <HR>
- </div>
-</div>
-</div>
-</div>
-<div class="clearfix visible-md"></div>
-</br>
 
 
 <!-- NEXT PAGE LINKS: -->
