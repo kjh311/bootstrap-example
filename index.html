@@ -1,35 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" ng-app="myApp">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Responsive Bootstrap Example</title>
+<!-- STYLES: -->
   <link rel="stylesheet" href="public/css/styles.css">
-  <!-- JQUERY: -->
+<!-- JQUERY: -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- ANGULAR: -->
+<!-- ANGULAR: -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-  <!-- FINALIZED JS FILE: -->
+<!--JS FILES: -->
   <script type="text/Javascript" src="app.js"></script>
-
-  <!-- BOOTSTRAP: -->
+  <script type="text/Javascript" src="myCtrl.js"></script>
+<!-- BOOTSTRAP: -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
-
-  <!-- GOOGLE FONT: -->
+<!-- GOOGLE FONT: -->
   <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Muli" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Orbitron" rel="stylesheet">
-  <!-- FONT AWESOME: -->
+<!-- FONT AWESOME: -->
   <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css" >
-
-  <!-- Browser Tab Icon: -->
+<!-- Browser Tab Icon: -->
   <link rel="icon" href="http://www.legendarydeeds.com/wiki/images/e/e8/Cowboy-Boot.png">
 </head>
 
+<body ng-controller="myCtrl">
 
-<body ng-app>
 
   <div class="container-fluid">
     <div id="top-header">
@@ -37,7 +36,6 @@
         <div class="col-sm-3" id="title-box">
           <h1 class="title-text">TITLE</h1>
         </div>
-
 
 <!-- HEADER: -->
         <div class="col-sm-9" >
