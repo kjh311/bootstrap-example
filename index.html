@@ -71,56 +71,25 @@
                           </div>
 
                           <div class="drop-down-article-slide drop-down-article-slide1">
-                            <div class="col-xs-3 drop-down-article-div">
-                              <img class="drop-down-article-image" src="img/chip.jpg" alt="">
-                              <p class="drop-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                              <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-                            </div>
-
-                            <div class="col-xs-3 drop-down-article-div"><img class="drop-down-article-image" src="img/map.jpg" alt="">
-                              <p class="drop-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                              <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-                            </div>
-
-                            <div class="col-xs-3 drop-down-article-div"><img class="drop-down-article-image" src="img/robot.jpg" alt="">
-                              <p class="drop-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <div class="col-xs-3 drop-down-article-div" ng-repeat="x in articles| startFrom:0 | limitTo:3">
+                              <img class="drop-down-article-image" src="{{x.image}}">
+                              <p class="drop-article-text">{{x.text.trunc(35)}}</p>
                               <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
                             </div>
                           </div>
 
-
                           <div class="drop-down-article-slide drop-down-article-slide2 hidden">
-                            <div class="col-xs-3 drop-down-article-div">
-                              <img class="drop-down-article-image" src="img/steve-jobs.jpeg" alt="">
-                              <p class="drop-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                              <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-                            </div>
-
-                            <div class="col-xs-3 drop-down-article-div"><img class="drop-down-article-image" src="img/touch.jpeg" alt="">
-                              <p class="drop-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                              <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-                            </div>
-
-                            <div class="col-xs-3 drop-down-article-div"><img class="drop-down-article-image" src="img/rainbow.jpg" alt="">
-                              <p class="drop-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <div class="col-xs-3 drop-down-article-div" ng-repeat="x in articles| startFrom:4 | limitTo:3">
+                              <img class="drop-down-article-image" src="{{x.image}}">
+                              <p class="drop-article-text">{{x.text.trunc(35)}}</p>
                               <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
                             </div>
                           </div>
 
                           <div class="drop-down-article-slide drop-down-article-slide3 hidden">
-                            <div class="col-xs-3 drop-down-article-div">
-                              <img class="drop-down-article-image" src="img/sound.jpeg" alt="">
-                              <p class="drop-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                              <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-                            </div>
-
-                            <div class="col-xs-3 drop-down-article-div"><img class="drop-down-article-image" src="img/mrDNA.jpeg" alt="">
-                              <p class="drop-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                              <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-                            </div>
-
-                            <div class="col-xs-3 drop-down-article-div"><img class="drop-down-article-image" src="img/dish.jpg" alt="">
-                              <p class="drop-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <div class="col-xs-3 drop-down-article-div" ng-repeat="x in articles| startFrom:7 | limitTo:3">
+                              <img class="drop-down-article-image" src="{{x.image}}">
+                              <p class="drop-article-text">{{x.text.trunc(35)}}</p>
                               <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
                             </div>
                           </div>
@@ -141,55 +110,25 @@
                             </div>
 
                             <div class="drop-down-article-slide drop-down-article-slide1">
-                              <div class="col-xs-3 drop-down-article-div">
-                                <img class="drop-down-article-image" src="img/blue.jpg" alt="">
-                                <p class="drop-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-                              </div>
-
-                              <div class="col-xs-3 drop-down-article-div"><img class="drop-down-article-image" src="img/board.jpg" alt="">
-                                <p class="drop-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-                              </div>
-
-                              <div class="col-xs-3 drop-down-article-div"><img class="drop-down-article-image" src="img/brain.jpg" alt="">
-                                <p class="drop-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                              <div class="col-xs-3 drop-down-article-div" ng-repeat="x in articles| startFrom:10 | limitTo:3">
+                                <img class="drop-down-article-image" src="{{x.image}}">
+                                <p class="drop-article-text">{{x.text.trunc(35)}}</p>
                                 <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
                               </div>
                             </div>
 
                             <div class="drop-down-article-slide drop-down-article-slide2 hidden">
-                              <div class="col-xs-3 drop-down-article-div">
-                                <img class="drop-down-article-image" src="img/cyborg.png" alt="">
-                                <p class="drop-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-                              </div>
-
-                              <div class="col-xs-3 drop-down-article-div"><img class="drop-down-article-image" src="img/eye.jpg" alt="">
-                                <p class="drop-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-                              </div>
-
-                              <div class="col-xs-3 drop-down-article-div"><img class="drop-down-article-image" src="img/hands.jpeg" alt="">
-                                <p class="drop-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                              <div class="col-xs-3 drop-down-article-div" ng-repeat="x in articles| startFrom:13 | limitTo:3">
+                                <img class="drop-down-article-image" src="{{x.image}}">
+                                <p class="drop-article-text">{{x.text.trunc(35)}}</p>
                                 <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
                               </div>
                             </div>
 
                             <div class="drop-down-article-slide drop-down-article-slide3 hidden">
-                              <div class="col-xs-3 drop-down-article-div">
-                                <img class="drop-down-article-image" src="img/map.jpg" alt="">
-                                <p class="drop-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-                              </div>
-
-                              <div class="col-xs-3 drop-down-article-div"><img class="drop-down-article-image" src="img/rainbow.jpg" alt="">
-                                <p class="drop-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-                              </div>
-
-                              <div class="col-xs-3 drop-down-article-div"><img class="drop-down-article-image" src="img/satelite.jpeg" alt="">
-                                <p class="drop-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                              <div class="col-xs-3 drop-down-article-div" ng-repeat="x in articles| startFrom:15 | limitTo:3">
+                                <img class="drop-down-article-image" src="{{x.image}}">
+                                <p class="drop-article-text">{{x.text.trunc(35)}}</p>
                                 <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
                               </div>
                             </div>
@@ -210,58 +149,29 @@
                               </div>
 
                               <div class="drop-down-article-slide drop-down-article-slide1">
-                                <div class="col-xs-3 drop-down-article-div">
-                                  <img class="drop-down-article-image" src="img/touch.jpeg" alt="">
-                                  <p class="drop-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                  <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
+                                <div class="col-xs-3 drop-down-article-div" ng-repeat="x in articles| startFrom:2 | limitTo:3">
+                                    <img class="drop-down-article-image" src="{{x.image}}">
+                                    <p class="drop-article-text">{{x.text.trunc(35)}}</p>
+                                    <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
+                                  </div>
                                 </div>
 
-                                <div class="col-xs-3 drop-down-article-div"><img class="drop-down-article-image" src="img/steve-jobs.jpeg" alt="">
-                                  <p class="drop-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                  <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-                                </div>
-
-                                <div class="col-xs-3 drop-down-article-div"><img class="drop-down-article-image" src="img/rainbow.jpg" alt="">
-                                  <p class="drop-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                  <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-                                </div>
-                              </div>
 
                               <div class="drop-down-article-slide drop-down-article-slide2 hidden">
-                                <div class="col-xs-3 drop-down-article-div">
-                                  <img class="drop-down-article-image" src="img/map.jpg" alt="">
-                                  <p class="drop-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                  <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
+                                <div class="col-xs-3 drop-down-article-div" ng-repeat="x in articles| startFrom:8 | limitTo:3">
+                                    <img class="drop-down-article-image" src="{{x.image}}">
+                                    <p class="drop-article-text">{{x.text.trunc(35)}}</p>
+                                    <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
+                                  </div>
                                 </div>
-
-                                <div class="col-xs-3 drop-down-article-div"><img class="drop-down-article-image" src="img/lock.jpg" alt="">
-                                  <p class="drop-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                  <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-                                </div>
-
-                                <div class="col-xs-3 drop-down-article-div"><img class="drop-down-article-image" src="img/chip.jpg" alt="">
-                                  <p class="drop-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                  <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-                                </div>
-                              </div>
 
                               <div class="drop-down-article-slide drop-down-article-slide3 hidden">
-                                <div class="col-xs-3 drop-down-article-div">
-                                  <img class="drop-down-article-image" src="img/bulb.jpg" alt="">
-                                  <p class="drop-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                  <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
+                                <div class="col-xs-3 drop-down-article-div" ng-repeat="x in articles| startFrom:12 | limitTo:3">
+                                    <img class="drop-down-article-image" src="{{x.image}}">
+                                    <p class="drop-article-text">{{x.text.trunc(35)}}</p>
+                                    <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
+                                  </div>
                                 </div>
-
-                                <div class="col-xs-3 drop-down-article-div"><img class="drop-down-article-image" src="img/brain.jpg" alt="">
-                                  <p class="drop-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                  <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-                                </div>
-
-                                <div class="col-xs-3 drop-down-article-div"><img class="drop-down-article-image" src="img/dish.jpg" alt="">
-                                  <p class="drop-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                                  <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
-                                </div>
-                              </div>
                             </div>
                           </ul>
                         </div>
@@ -309,7 +219,7 @@
                         </ul>
                       </div>
 
-                      <!-- DROPDOWN MENU: -->
+            <!-- DROPDOWN MENU: -->
                       <div class="col-sm-12 visible-xs ">
                         <div class="dropdown pull-right">
                           <p class="dropdown-toggle disabled" type="button" data-toggle="dropdown">    <i class="fa fa-user fa-2x pull-right user-icon user-icon2"></i>
@@ -390,167 +300,74 @@
 
 <!-- ARTICLES: -->
                         <div class="row">
-                          <div class="col-sm-4 featured">
+                          <div class="col-sm-4 featured"  ng-repeat="x in articles| startFrom:0 | limitTo:1" >
                             <h2 class="pull-left">featured article</h2>
-                            <h4 class="pull-left lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit molestias iste et minus. </h4>
+                            <h4 class="pull-left lorem">{{x.text.trunc(200)}}</h4>
                           </br>
                         </br>
                       </br>
-                      <h5 class="pull-right">Author #1</h5>
+                      <h5 class="pull-right">{{x.author}}</h5>
                       <div class="pull-left featured-text">
                         <h4> Featured</h4>
                       </div>
                     </div>
 
                     <div class="col-sm-8">
-                      <div class="row">
-                        <div class="col-sm-4 article article1">
-                          <h4 class="pull-left article-headline">Article 1</h4>
-                          <p class="pull-left lorem lorem-article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit molestias iste et minus. </p>
+                      <div class="row" >
+
+                        <div ng-repeat="x in articles| startFrom:4 | limitTo:6" class="col-sm-4 article article1" style="background-image: url({{x.image}});">
+                          <h4 class="pull-left article-headline">{{x.title}}</h4>
+                          <p class="pull-left lorem lorem-article">{{x.text.trunc(170)}} </p>
                         </br>
                       </br>
                     </br>
-                    <h5 class="pull-right">Author #1</h5>
+                    <h5 class="pull-right">{{x.author}}</h5>
                     <div class="pull-left featured-text">
                       <h4> Article</h4>
                     </div>
                   </div>
-                  <div class="col-sm-4 article article2">
-                    <h4 class="pull-left article-headline">Article 2</h4>
-                    <p class="pull-left lorem lorem-article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit molestias iste et minus. </p>
-                  </br>
-                </br>
-              </br>
-              <h5 class="pull-right">Author #2</h5>
-              <div class="pull-left featured-text">
-                <h4> Article</h4>
               </div>
-
             </div>
-            <div class="col-sm-4 article article3">
-              <h4 class="pull-left article-headline">Article 3</h4>
-              <p class="pull-left lorem lorem-article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit molestias iste et minus. </p>
-            </br>
-          </br>
-        </br>
-        <div class="clearfix visible-sm"></div>
-        <h5 class="pull-right">Author #3</h5>
-        <div class="pull-left featured-text">
-          <h4> Article</h4>
-        </div>
-
+          </div>
       </div>
-      <div class="col-sm-4 article article4">
-        <h4 class="pull-left article-headline">Article 4</h4>
-        <p class="pull-left lorem lorem-article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit molestias iste et minus. </p>
-      </br>
-    </br>
-  </br>
-  <h5 class="pull-right">Author #4</h5>
-  <div class="pull-left featured-text">
-    <h4> Article</h4>
-  </div>
-
-</div>
-<div class="col-sm-4 article article5">
-  <h4 class="pull-left article-headline">Article 5</h4>
-  <p class="pull-left lorem lorem-article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit molestias iste et minus. </p>
-</br>
-</br>
-</br>
-<h5 class="pull-right">Author #5</h5>
-<div class="pull-left featured-text">
-  <h4> Article</h4>
-</div>
-
-</div>
-<div class="col-sm-4 article article6">
-  <h4 class="pull-left article-headline">Article 6</h4>
-  <p class="pull-left lorem lorem-article">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit molestias iste et minus. </p>
-</br>
-</br>
-</br>
-<div class="clearfix visible-sm"></div>
-<h5 class="pull-right">Author #6</h5>
-<div class="pull-left featured-text">
-  <h4> Article</h4>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 
 <!-- BOTTOM ARTICLES: -->
-<div class="row">
-  <div class="col-md-3 scrollable-links hidden-xs hidden-sm">
-    <div class="aside-articles-wrap">
-      <div class="row aside-links">
-        <div class="col-sm-4 aside-links-span">
-          <p data-target="#myCarousel" data-slide-to="0" class="active aside-link latest carousel-active-slide">Latest</p>
-        </div>
-        <div class="col-sm-4">
-          <p data-target="#myCarousel" data-slide-to="1" class="aside-link popular">Popular</p>
-        </div>
-        <div class="col-sm-4">
-          <p data-target="#myCarousel" data-slide-to="2" class="aside-link editor-pick">Editor's Pick</p>
-        </div>
-        <div class="clearfix-sm"></div>
-      </div>
+    <div class="row">
+      <div class="col-md-3 scrollable-links hidden-xs hidden-sm">
+        <div class="aside-articles-wrap">
+          <div class="row aside-links">
+            <div class="col-sm-4 aside-links-span">
+              <p data-target="#myCarousel" data-slide-to="0" class="active aside-link latest carousel-active-slide">Latest</p>
+            </div>
+            <div class="col-sm-4">
+              <p data-target="#myCarousel" data-slide-to="1" class="aside-link popular">Popular</p>
+            </div>
+            <div class="col-sm-4">
+              <p data-target="#myCarousel" data-slide-to="2" class="aside-link editor-pick">Editor's Pick</p>
+            </div>
+            <div class="clearfix-sm"></div>
+          </div>
 
 
-<!-- CAROUSEL: -->
+
+<!-- ASIDE ARTICLES CAROUSEL: -->
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
     <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
-          <div class="item active">
 
+<!-- Aside Artiles Page 1: -->
+          <div class="item active">
       <!-- RESPONSIVE TABLE: -->
             <div class="row">
               <div class="col-sm-12">
                 <div class="responsive-table">
                   <table class="table-hover">
                     <tbody>
-                      <tr>
-                        <td class="aside-image-td"><img src="img/board.jpg" class="aside-image" alt=""><span class="read-more ">Read More <i class="fa fa-angle-right"></i></span></td>
-                        <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
+                      <tr ng-repeat="x in articles| startFrom:6 | limitTo:8">
+                        <td class="aside-image-td"><img src="{{x.image}}" class="aside-image"><span class="read-more ">Read More <i class="fa fa-angle-right"></i></span></td>
+                        <td class="aside-article-text">{{x.text.trunc(100)}}</td>
                       </tr>
-                      <tr>
-                        <td class="aside-image-td"><img src="img/dish.jpg" class="aside-image" alt=""><span class="read-more ">Read More <i class="fa fa-angle-right"></i></span></td>
-                        <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
-                      </tr>
-
-                      <tr>
-                        <td class="aside-image-td"><img src="img/hands.jpeg" class="aside-image" alt=""><span class="read-more ">Read More <i class="fa fa-angle-right"></i></span></td>
-                        <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
-                      </tr>
-
-                      <tr>
-                        <td class="aside-image-td"><img src="img/keyboard.jpg" class="aside-image" alt=""><span class="read-more ">Read More <i class="fa fa-angle-right"></i></span></td>
-                        <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
-                      </tr>
-
-                      <tr>
-                        <td class="aside-image-td"><img src="img/rainbow.jpg" class="aside-image" alt=""><span class="read-more ">Read More <i class="fa fa-angle-right"></i></span></td>
-                        <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
-                      </tr>
-
-                      <tr>
-                        <td class="aside-image-td"><img src="img/lock.jpg" class="aside-image" alt=""><span class="read-more ">Read More <i class="fa fa-angle-right"></i></span></td>
-                        <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
-                      </tr>
-
-                      <tr>
-                        <td class="aside-image-td"><img src="img/board.jpg" class="aside-image" alt=""><span class="read-more ">Read More <i class="fa fa-angle-right"></i></span></td>
-                        <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
-                      </tr>
-
-                      <tr>
-                        <td class="aside-image-td"><img src="img/map.jpg" class="aside-image" alt=""><span class="read-more ">Read More <i class="fa fa-angle-right"></i></span></td>
-                        <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
-                      </tr>
-
                     </tbody>
                   </table>
                 </div>
@@ -559,102 +376,42 @@
           </div>
         <div class="clearfix-sm"></div>
 
+<!-- Aside Artiles Page 2: -->
           <div class="item">
-<!-- RESPONSIVE TABLE: -->
+    <!-- RESPONSIVE TABLE: -->
             <div class="row">
               <div class="responsive-table">
                 <table class="table-hover">
                   <tbody>
-                    <tr>
-                      <td class="aside-image-td"><img src="img/blue.jpg" class="aside-image" alt=""><span class="read-more ">Read More <i class="fa fa-angle-right"></i></span></td>
-                      <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
-                    </tr>
-
-                    <tr>
-                      <td class="aside-image-td"><img src="img/brain.jpg" class="aside-image" alt=""><span class="read-more ">Read More <i class="fa fa-angle-right"></i></span></td>
-                      <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
-                    </tr>
-
-                    <tr>
-                      <td class="aside-image-td"><img src="img/bulb.jpg" class="aside-image" alt=""><span class="read-more ">Read More <i class="fa fa-angle-right"></i></span></td>
-                      <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
-                    </tr>
-
-                    <tr>
-                      <td class="aside-image-td"><img src="img/eye.jpg" class="aside-image" alt=""><span class="read-more ">Read More <i class="fa fa-angle-right"></i></span></td>
-                      <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
-                    </tr>
-
-                    <tr>
-                      <td class="aside-image-td"><img src="img/map.jpg" class="aside-image" alt=""><span class="read-more ">Read More <i class="fa fa-angle-right"></i></span></td>
-                      <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
-                    </tr>
-
-                    <tr>
-                      <td class="aside-image-td"><img src="img/robot.png" class="aside-image" alt=""><span class="read-more ">Read More <i class="fa fa-angle-right"></i></span></td>
-                      <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
-                    </tr>
-
-                    <tr>
-                      <td class="aside-image-td"><img src="img/dish.jpg" class="aside-image" alt=""><span class="read-more ">Read More <i class="fa fa-angle-right"></i></span></td>
-                      <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
-                    </tr>
-
-                    <tr>
-                      <td class="aside-image-td"><img src="img/mrDNA.jpeg" class="aside-image" alt=""><span class="read-more ">Read More <i class="fa fa-angle-right"></i></span></td>
-                      <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
-                    </tr>
+                    <tr ng-repeat="x in articles| startFrom:0 | limitTo:8">
+                        <td class="aside-image-td"><img src="{{x.image}}" class="aside-image">
+                        </br>
+                        <span class="read-more ">Read More <i class="fa fa-angle-right"></i></span>
+                      </br>
+                    </td>
+                        <td class="aside-article-text">{{x.text.trunc(100)}}</td>
+                      </tr>
                   </tbody>
                 </table>
               </div>
             </div>
           </div>
 
-          <div class="item">
-            <!-- RESPONSIVE TABLE: -->
+<!-- Aside Artiles Page 3: -->
+      <div class="item">
+    <!-- RESPONSIVE TABLE: -->
             <div class="row">
               <div class="responsive-table">
                 <table class="table-hover">
                   <tbody>
-                    <tr>
-                      <td class="aside-image-td"><img src="img/mrDNA.png" class="aside-image" alt=""><span class="read-more ">Read More <i class="fa fa-angle-right"></i></span></td>
-                      <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
-                    </tr>
-
-                    <tr>
-                      <td class="aside-image-td"><img src="img/satelite.jpeg" class="aside-image" alt=""><span class="read-more ">Read More <i class="fa fa-angle-right"></i></span></td>
-                      <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
-                    </tr>
-
-                    <tr>
-                      <td class="aside-image-td"><img src="img/sound.jpeg" class="aside-image" alt=""><span class="read-more ">Read More <i class="fa fa-angle-right"></i></span></td>
-                      <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
-                    </tr>
-
-                    <tr>
-                      <td class="aside-image-td"><img src="img/steve-jobs.jpeg" class="aside-image" alt=""><span class="read-more ">Read More <i class="fa fa-angle-right"></i></span></td>
-                      <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
-                    </tr>
-
-                    <tr>
-                      <td class="aside-image-td"><img src="img/touch.jpeg" class="aside-image" alt=""><span class="read-more ">Read More <i class="fa fa-angle-right"></i></span></td>
-                      <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
-                    </tr>
-
-                    <tr>
-                      <td class="aside-image-td"><img src="img/hands.jpeg" class="aside-image" alt=""><span class="read-more ">Read More <i class="fa fa-angle-right"></i></span></td>
-                      <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
-                    </tr>
-
-                    <tr>
-                      <td class="aside-image-td"><img src="img/keyboard.jpg" class="aside-image" alt=""><span class="read-more ">Read More <i class="fa fa-angle-right"></i></span></td>
-                      <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
-                    </tr>
-
-                    <tr>
-                      <td class="aside-image-td"><img src="img/chip.jpg" class="aside-image" alt=""><span class="read-more ">Read More <i class="fa fa-angle-right"></i></span></td>
-                      <td class="aside-article-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, fuga? Dolorum accusantium amet blanditiis possimus.</td>
-                    </tr>
+                    <tr ng-repeat="x in articles| startFrom:5 | limitTo:8">
+                        <td class="aside-image-td"><img src="{{x.image}}" class="aside-image">
+                        </br>
+                        <span class="read-more ">Read More <i class="fa fa-angle-right"></i></span>
+                        </br>
+                        </td>
+                        <td class="aside-article-text">{{x.text.trunc(100)}}</td>
+                      </tr>
                   </tbody>
                 </table>
               </div>
@@ -669,7 +426,6 @@
   <!-- WHITE ARTICLES: -->
   <div class="col-md-9 white-articles">
 
-
     <!-- White Article Page 1: -->
     <div class="row white-article-wrapper white-article-wrapper1 active">
       <div class="col-sm-12 white-article-main">
@@ -682,7 +438,7 @@
         </br>
         <div class="row">
           <div class="col-xs-3">
-            <img  src="{{x.image}}" class="white-article-image" alt="">
+            <img  src="{{x.image}}" class="white-article-image">
           </div>
           <div class="col-xs-9">
             <p class="white-article-text">{{x.text}}</p>
@@ -695,8 +451,6 @@
       </div>
     </div>
   </div>
-
-
 
 <!-- White Article Page 2: -->
     <div class="row white-article-wrapper white-article-wrapper2 hidden">
@@ -711,7 +465,7 @@
 
         <div class="row">
           <div class="col-xs-3">
-            <img  src="{{x.image}}" class="white-article-image" alt="">
+            <img  src="{{x.image}}" class="white-article-image">
           </div>
           <div class="col-xs-9">
             <p class="white-article-text">{{x.text}}</p>
@@ -738,7 +492,7 @@
 
         <div class="row">
           <div class="col-xs-3">
-            <img  src="{{x.image}}" class="white-article-image" alt="">
+            <img  src="{{x.image}}" class="white-article-image">
           </div>
           <div class="col-xs-9">
             <p class="white-article-text">{{x.text}}</p>
