@@ -300,9 +300,9 @@
 
 <!-- ARTICLES: -->
                         <div class="row">
-                          <div class="col-sm-4 featured"  ng-repeat="x in articles| startFrom:0 | limitTo:1" >
+                          <div class="col-sm-4 featured" ng-repeat="x in articles| startFrom:14 | limitTo:1" style="background-image: url({{x.image}});">
                             <h2 class="pull-left">featured article</h2>
-                            <h4 class="pull-left lorem">{{x.text.trunc(200)}}</h4>
+                            <h4 class="pull-left lorem">{{x.text.trunc(120)}}</h4>
                           </br>
                         </br>
                       </br>
@@ -317,7 +317,7 @@
 
                         <div ng-repeat="x in articles| startFrom:4 | limitTo:6" class="col-sm-4 article article1" style="background-image: url({{x.image}});">
                           <h4 class="pull-left article-headline">{{x.title}}</h4>
-                          <p class="pull-left lorem lorem-article">{{x.text.trunc(170)}} </p>
+                          <p class="pull-left lorem lorem-article">{{x.text.trunc(90)}} </p>
                         </br>
                       </br>
                     </br>
@@ -365,7 +365,9 @@
                   <table class="table-hover">
                     <tbody>
                       <tr ng-repeat="x in articles| startFrom:6 | limitTo:8">
-                        <td class="aside-image-td"><img src="{{x.image}}" class="aside-image"><span class="read-more ">Read More <i class="fa fa-angle-right"></i></span></td>
+                        <td class="aside-image-td"><img src="{{x.image}}" class="aside-image">
+                          </br>
+                          <span class="read-more ">Read More <i class="fa fa-angle-right"></i></span></td>
                         <td class="aside-article-text">{{x.text.trunc(100)}}</td>
                       </tr>
                     </tbody>
@@ -445,9 +447,9 @@
             <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
           </div>
           <div class="clearfix visible-xs"></div>
-          <HR>
           </div>
         </div>
+        <hr class="white-hr">
       </div>
     </div>
   </div>
@@ -472,12 +474,15 @@
             <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
           </div>
           <div class="clearfix visible-xs"></div>
-          <HR>
           </div>
         </div>
+        <hr class="white-hr">
       </div>
+
     </div>
+
   </div>
+
 
 <!-- White Article Page 3: -->
     <div class="row white-article-wrapper white-article-wrapper3 hidden">
@@ -496,12 +501,12 @@
           </div>
           <div class="col-xs-9">
             <p class="white-article-text">{{x.text}}</p>
-            <span class="read-more pull-left">Read More <i class="fa fa-angle-right"></i></span>
+            <span class="read-more read-more-white pull-left">Read More <i class="fa fa-angle-right"></i></span>
           </div>
           <div class="clearfix visible-xs"></div>
-          <HR>
           </div>
         </div>
+        <hr class="white-hr">
       </div>
     </div>
   </div>
