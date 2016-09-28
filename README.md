@@ -6,8 +6,13 @@ position of elements on scroll,
 and for carousel logic.
 *Styled through SASS and piped through a custom Gulpfile.
 
+
+Desktop:
 ![site](img/site.png)
+
+Mobile:
 ![mobile site](img/mobile.png)
+
 *Based upon layout of Singularityhub.com
 
 
