@@ -14,8 +14,6 @@ $( document ).ready(function() {
       $('.scrollable-links').removeClass('scrollable-links-fixed');
       $('.white-articles').removeClass('col-md-offset-3');
     }
-
-
   });
 
 

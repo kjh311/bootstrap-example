@@ -13,6 +13,34 @@ $red: #CD5C5C;
 $turquoise: #40E0D0;
 
 
+// Vendor Prefixes:
+// @mixin prefix($map, $vendors: webkit moz ms o) {
+//   @each $prop, $value in $map {
+//         @if $vendors {
+//           @each $vendor in $vendors {
+//             #{"-" + $vendor + "-" + $prop}: #{$value};
+//           }
+//         }
+//         // Dump regular property anyway
+//         #{$prop}: #{$value};
+//   }
+// }
+
+// @mixin vendor-prefix($name, $argument) {
+//   -webkit-#{$name}: #{$argument};
+//   -ms-#{$name}: #{$argument};
+//   -moz-#{$name}: #{$argument};
+//   -o-#{$name}: #{$argument};
+//   #{$name}: #{$argument};
+// }
+
+// Linear Gradient Mixin:
+@mixin linear-gradient($direction, $color-stops...) {
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}
+
 
 .align-right{
   position: absolute;
@@ -29,6 +57,7 @@ $turquoise: #40E0D0;
 }
 .aside-article-text{
   padding: 5px;
+  margin-right: 10px !important;
 }
 .aside-image{
   width: 40%;
@@ -88,7 +117,8 @@ body{
   border-top: 2px solid $very-dark-grey;
 }
 .dropdown-menu{
-  background: -webkit-linear-gradient($dark-grey, $very-dark-grey);
+  @include linear-gradient($dark-grey, $very-dark-grey);
+  // background: -webkit-linear-gradient($dark-grey, $very-dark-grey);
   width: 500%;
   border: 2px solid black !important;
   margin-top: -2px !important;
@@ -232,7 +262,7 @@ body{
   color: white !important;
 }
 footer{
-  background: -webkit-linear-gradient($dark-grey, black);
+  @include linear-gradient($dark-grey, black);
   color: $off-white;
 }
 .footer-links-ul{
@@ -432,6 +462,7 @@ td, .aside-article-text{
 .scrollable-links{
   background-color: $light-grey;
   position: relative;
+  -o-height: 100%;
 }
 .scrollable-links-fixed{
   position: fixed !important;
@@ -472,8 +503,8 @@ table{
 .trending-feed{
   text-transform: uppercase;
   cursor: pointer;
-  font-size: 1.5em;
-  margin-top: 5px;
+  font-size: 1.3em;
+  margin-top: 8px;
 }
 .trending-text{
   font-style: italic;
