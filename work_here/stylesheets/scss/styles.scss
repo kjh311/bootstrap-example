@@ -89,6 +89,9 @@ $turquoise: #40E0D0;
 }
 body{
   -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
   text-align: center;
   font-size: 16px;
 }
@@ -106,6 +109,8 @@ body{
 }
 .checkbox-row{
   padding-top: 10px;
+  padding-bottom: 10px;
+  // display: inline;
 }
 .collapse{
     margin-top: 0px;
@@ -195,6 +200,7 @@ body{
 }
 .drop-down-article-div{
   left: -20px;
+  height: 150px;
 }
 .drop-down-article-div:hover{
   background-color: $grey-white;
@@ -238,12 +244,13 @@ body{
   background-size: 700px 500px;
   color: white;
   text-transform: uppercase;
-}
+}opacity
 .featured-text{
   position: absolute;
   background-color: $see-though-grey;
   bottom: 0px !important;
   padding-left: 15px;
+  padding-right: 15px;
   left: 0px;
 }
 .featured-text h4{
@@ -372,6 +379,7 @@ li{
   margin-top: 11px;
 }
 #next-page{
+  margin-top: 20px;
   margin-left: -60px !important;
 }
 #next-page li p{
@@ -400,8 +408,12 @@ li{
 .read-more{
   color: $red;
   cursor: pointer;
-  margin-top: 5px;
-  // padding-bottom: 20px;
+}
+.read-more-drop{
+  color: $red;
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
 }
 .white-hr{
   position: relative;
@@ -490,11 +502,17 @@ td, .aside-article-text{
   position: relative;
 }
 .remember-me{
-  margin-top: 3px;;
+  top: 3px !important;
+  // margin-left: -45px !important;
+  position: relative;
+  display: inline;
+}
+.remember-me-checkbox{
+  display: inline;
 }
 .submit-button{
-  width: 220px;
-  padding-bottom: 40px;
+  width: 90%;
+  margin-bottom: 10px !important;
 }
 table{
   width: 100%;
@@ -516,7 +534,7 @@ table{
   margin-right: 20px;
 }
 .user-box input{
-  width: 220px;
+  width: 90%;
   border-radius: 5px;
   padding: 15px;
   color: black;
@@ -611,6 +629,7 @@ table{
     .white-article-1{
       max-height: 200px;
     }
+
   }
 
   @media only screen and (max-width: 400px) {
