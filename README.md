@@ -1,10 +1,10 @@
 #Creating a resposive Bootstrap Landing Page.
 
-*Content Routed through AngularJS binding.
-*Custom Jquery for hover drop down menues,
+* Content Routed through AngularJS binding.
+* Custom Jquery for hover drop down menues,
 position of elements on scroll,
 and for carousel logic.
-*Styled through SASS and piped through a custom Gulpfile.
+* Styled through SASS and piped through a custom Gulpfile.
 
 
 Desktop:
@@ -13,7 +13,7 @@ Desktop:
 Mobile:
 ![mobile site](img/mobile.png)
 
-*Based upon layout of Singularityhub.com
+* Based upon layout of Singularityhub.com
 
 
 
