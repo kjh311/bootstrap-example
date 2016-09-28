@@ -7,6 +7,7 @@ and for carousel logic.
 *Styled through SASS and piped through a custom Gulpfile.
 
 ![site](img/site.png)
+![mobile site](img/mobile.png)
 *Based upon layout of Singularityhub.com
 
 
