@@ -123,7 +123,6 @@ body{
 }
 .dropdown-menu{
   @include linear-gradient($dark-grey, $very-dark-grey);
-  // background: -webkit-linear-gradient($dark-grey, $very-dark-grey);
   width: 500%;
   border: 2px solid black !important;
   margin-top: -2px !important;
